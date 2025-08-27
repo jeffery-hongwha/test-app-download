@@ -8,10 +8,10 @@
     window.onload = function () {
       const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-      if (/iPhone|iPad|iPod/i.test(userAgent)) {
-        window.location.href = "https://apps.apple.com/tw/app/%E6%99%BA%E7%94%9F%E6%B4%BB/id1071519372";
+      if (/iPhone/i.test(userAgent)) {
+        window.location.replace() = "https://apps.apple.com/tw/app/%E6%99%BA%E7%94%9F%E6%B4%BB/id1071519372";
       } else if (/Android/i.test(userAgent)) {
-        window.location.href = "https://play.google.com/store/apps/details?id=chk.kingnet.app&hl=zh-TW";
+        window.location.replace() = "https://play.google.com/store/apps/details?id=chk.kingnet.app&hl=zh-TW";
       } else {
         document.getElementById("message").innerText =
           "請用手機掃描 QR Code 以下載 App";
